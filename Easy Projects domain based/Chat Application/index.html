@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatWave 💬</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="chat-container glass">
+    <header class="chat-header">
+      <div class="profile">
+        <img src="https://i.ibb.co/Tr6c6Y3/avatar.png" alt="bot-avatar" class="avatar" />
+        <div>
+          <h3>ChatWave 🤖</h3>
+          <p class="status"><span class="dot"></span> Online</p>
+        </div>
+      </div>
+      <div class="header-buttons">
+        <button id="themeToggle" title="Toggle Theme">🌙</button>
+      </div>
+    </header>
+
+    <main class="chat-box" id="chatBox">
+      <div class="message bot fade-in">
+        <span>Hey there! 👋 Welcome to <b>ChatWave</b>. How can I brighten your day today?</span>
+        <div class="time">10:00 AM</div>
+      </div>
+    </main>
+
+    <footer class="chat-input">
+      <input type="text" id="userInput" placeholder="Type a message..." autocomplete="off" />
+      <button id="sendBtn">➤</button>
+    </footer>
+  </div>
+
+  <audio id="sendSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
